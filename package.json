@@ -1,0 +1,43 @@
+{
+  "name": "sk1er.club-app",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "tsnd --respawn --transpileOnly --project tsconfig.server.json --ignore-watch .next -- server/app.ts",
+    "lint": "tsc --noEmit && eslint \"./**/*.{ts,tsx}\" --quiet --fix",
+    "build": "next build && tsc --project tsconfig.server.json"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.1.2",
+    "@material-ui/icons": "^4.2.1",
+    "@next/bundle-analyzer": "^8.1.0",
+    "axios": "^0.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "jss": "10.0.0-alpha.17",
+    "mobx": "^5.10.1",
+    "mobx-react": "^6.1.1",
+    "next": "^9.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typescript": "^3.5.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/helmet": "^0.0.43",
+    "@types/react": "^16.8.22",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-jss": "^8.6.3",
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^5.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.3.0",
+    "ts-node-dev": "^1.0.0-pre.40"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "prettier.eslintIntegration": false,
+  "eslint.packageManager": "yarn",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/production-server": true,
+    "**/.next": true
+  }
+}
